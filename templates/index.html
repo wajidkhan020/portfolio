@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wajid Khan Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>Wajid Khan</h1>
+    <p>BSIT Student | Data Science | Cloud Computing</p>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a passionate BSIT student focused on Data Science, Machine Learning, 
+        Cloud Computing, and Software Development. I love building real-world projects 
+        and improving my technical skills through hands-on practice.
+    </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Python Programming</li>
+        <li>Data Science & Analytics</li>
+        <li>Machine Learning</li>
+        <li>Docker & Containerization</li>
+        <li>AWS Cloud (EC2, Deployment)</li>
+        <li>Flutter (Mobile Development)</li>
+    </ul>
+</section>
+
+<!-- ================= PROJECTS (NEW ADDITION) ================= -->
+<section>
+    <h2>Projects</h2>
+    <ul>
+        <li>To-Do App using Flask + SQLite</li>
+        <li>Data Analysis Dashboard (Python)</li>
+        <li>Cloud Deployment on AWS EC2</li>
+    </ul>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section>
+    <h2>Contact Me</h2>
+
+    <form action="/contact" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Wajid Khan | Built with Flask + Docker + AWS</p>
+</footer>
+
+</body>
+</html>

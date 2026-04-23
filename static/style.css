@@ -1,0 +1,109 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f4, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: linear-gradient(135deg, #04ad50, #037a38);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h2 {
+    color: #222;
+    border-left: 5px solid #04ad50;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #f8f9fa;
+    margin: 8px 0;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border-left: 4px solid #04ad50;
+    transition: all 0.2s ease;
+}
+
+ul li:hover {
+    background: #e9f7ef;
+    transform: translateX(5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e1e1e;
+    color: white;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
