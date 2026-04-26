@@ -1,70 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Wajid Khan Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BSIT Batch 2026 — Portfolio Hub for Wajid Khan, Muhammad Ali, and Mubashir Hassan." />
+  <title>IT Students Portfolio Hub</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
-    <h1>Wajid Khan</h1>
-    <p>BSIT Student | Data Science | Cloud Computing</p>
-</header>
+  <!-- Background decorations -->
+  <div class="bg-grid"  aria-hidden="true"></div>
+  <div class="bg-glow"  aria-hidden="true"></div>
+  <div class="bg-glow2" aria-hidden="true"></div>
 
-<!-- ================= ABOUT ================= -->
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a passionate BSIT student focused on Data Science, Machine Learning, 
-        Cloud Computing, and Software Development. I love building real-world projects 
-        and improving my technical skills through hands-on practice.
-    </p>
-</section>
+  <div class="container">
 
-<!-- ================= SKILLS ================= -->
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python Programming</li>
-        <li>Data Science & Analytics</li>
-        <li>Machine Learning</li>
-        <li>Docker & Containerization</li>
-        <li>AWS Cloud (EC2, Deployment)</li>
-        <li>Flutter (Mobile Development)</li>
-    </ul>
-</section>
+    <!-- ======= HERO ======= -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="dot" aria-hidden="true"></span>
+        BSIT · Batch 2026
+      </div>
+      <h1>Three Developers.<br><em>One Vision.</em></h1>
+      <p>Explore the individual portfolios of three IT students building real-world solutions with modern tech.</p>
+    </section>
 
-<!-- ================= PROJECTS (NEW ADDITION) ================= -->
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>To-Do App using Flask + SQLite</li>
-        <li>Data Analysis Dashboard (Python)</li>
-        <li>Cloud Deployment on AWS EC2</li>
-    </ul>
-</section>
+    <!-- Divider -->
+    <div class="divider" aria-hidden="true">
+      <div class="divider-line"></div>
+      <div class="divider-text">SELECT A PORTFOLIO</div>
+      <div class="divider-line"></div>
+    </div>
 
-<!-- ================= CONTACT ================= -->
-<section>
-    <h2>Contact Me</h2>
+    <!-- ======= PORTFOLIO CARDS ======= -->
+    <div class="cards-grid">
 
-    <form action="/contact" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <!-- ── Card 1: Wajid Khan ── -->
+      <div class="card card-1">
+        <div class="card-number">01 / Wajid Khan</div>
+        <div class="avatar-ring avatar-1" aria-hidden="true">WK</div>
+        <div class="card-name">Wajid Khan</div>
+        <div class="card-role">Data Science · Cloud</div>
+        <p class="card-desc">
+          Passionate about machine learning, cloud infrastructure, and deploying
+          scalable data-driven applications on AWS.
+        </p>
+        <div class="tags">
+          <span class="tag tag-blue">Python</span>
+          <span class="tag tag-blue">ML</span>
+          <span class="tag tag-blue">AWS EC2</span>
+          <span class="tag tag-blue">Docker</span>
+          <span class="tag tag-blue">Flutter</span>
+        </div>
 
-        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <!-- Contact Info -->
+        <div class="card-contact">
+          <a class="contact-link"
+             href="https://wa.me/923001234567"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="WhatsApp Wajid Khan">
+            <span class="contact-icon icon-whatsapp">
+              <!-- WhatsApp icon -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.55 4.142 1.595 5.945L0 24l6.335-1.652A11.971 11.971 0 0012.04 23.99h.006c6.578 0 11.935-5.335 11.938-11.893 0-3.18-1.24-6.165-3.464-8.648zM12.045 21.98a9.916 9.916 0 01-5.032-1.37l-.361-.214-3.741.976.999-3.648-.235-.374a9.864 9.864 0 01-1.521-5.263c.002-5.455 4.455-9.893 9.916-9.893 2.65 0 5.138 1.028 7.011 2.895a9.827 9.827 0 012.902 6.993c-.003 5.457-4.456 9.898-9.938 9.898zm5.44-7.404c-.298-.149-1.765-.869-2.038-.968-.273-.099-.472-.149-.671.149-.199.297-.769.968-.943 1.167-.174.198-.347.223-.645.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.133-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.671-1.612-.919-2.207-.242-.579-.487-.5-.671-.509-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.793.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.571-.347z" fill="#25d366"/>
+              </svg>
+            </span>
+            +92 300 123 4567
+          </a>
+          <a class="contact-link"
+             href="mailto:wajid.khan@email.com"
+             aria-label="Email Wajid Khan">
+            <span class="contact-icon icon-email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 7l10 7 10-7"/>
+              </svg>
+            </span>
+            wajid.khan@email.com
+          </a>
+        </div>
 
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+        <!-- Portfolio Link -->
+        <a class="card-cta" href="http://localhost:5000" target="_blank" rel="noopener noreferrer" aria-label="View Wajid Khan's portfolio">
+          <span class="cta-label cta-1">View Portfolio</span>
+          <span class="cta-arrow arrow-1">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 12L12 2M12 2H5M12 2V9" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
 
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+      <!-- ── Card 2: Muhammad Ali ── -->
+      <div class="card card-2">
+        <div class="card-number">02 / Muhammad Ali</div>
+        <div class="avatar-ring avatar-2" aria-hidden="true">MA</div>
+        <div class="card-name">Muhammad Ali</div>
+        <div class="card-role">Full Stack · Mobile</div>
+        <p class="card-desc">
+          Building cross-platform mobile apps and robust backend systems. Focused
+          on clean architecture and developer experience.
+        </p>
+        <div class="tags">
+          <span class="tag tag-purple">React</span>
+          <span class="tag tag-purple">Node.js</span>
+          <span class="tag tag-purple">Flutter</span>
+          <span class="tag tag-purple">Firebase</span>
+          <span class="tag tag-purple">REST APIs</span>
+        </div>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2026 Wajid Khan | Built with Flask + Docker + AWS</p>
-</footer>
+        <!-- Contact Info -->
+        <div class="card-contact">
+          <a class="contact-link"
+             href="https://wa.me/923009876543"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="WhatsApp Muhammad Ali">
+            <span class="contact-icon icon-whatsapp">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.55 4.142 1.595 5.945L0 24l6.335-1.652A11.971 11.971 0 0012.04 23.99h.006c6.578 0 11.935-5.335 11.938-11.893 0-3.18-1.24-6.165-3.464-8.648zM12.045 21.98a9.916 9.916 0 01-5.032-1.37l-.361-.214-3.741.976.999-3.648-.235-.374a9.864 9.864 0 01-1.521-5.263c.002-5.455 4.455-9.893 9.916-9.893 2.65 0 5.138 1.028 7.011 2.895a9.827 9.827 0 012.902 6.993c-.003 5.457-4.456 9.898-9.938 9.898zm5.44-7.404c-.298-.149-1.765-.869-2.038-.968-.273-.099-.472-.149-.671.149-.199.297-.769.968-.943 1.167-.174.198-.347.223-.645.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.133-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.671-1.612-.919-2.207-.242-.579-.487-.5-.671-.509-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.793.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.571-.347z" fill="#25d366"/>
+              </svg>
+            </span>
+            +92 300 987 6543
+          </a>
+          <a class="contact-link"
+             href="mailto:m.ali@email.com"
+             aria-label="Email Muhammad Ali">
+            <span class="contact-icon icon-email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 7l10 7 10-7"/>
+              </svg>
+            </span>
+            m.ali@email.com
+          </a>
+        </div>
+
+        <!-- Portfolio Link -->
+        <a class="card-cta" href="#" aria-label="View Muhammad Ali's portfolio">
+          <span class="cta-label cta-2">View Portfolio</span>
+          <span class="cta-arrow arrow-2">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 12L12 2M12 2H5M12 2V9" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- ── Card 3: Mubashir Hassan ── -->
+      <div class="card card-3">
+        <div class="card-number">03 / Mubashir Hassan</div>
+        <div class="avatar-ring avatar-3" aria-hidden="true">MH</div>
+        <div class="card-name">Mubashir Hassan</div>
+        <div class="card-role">Security · DevOps</div>
+        <p class="card-desc">
+          Exploring cybersecurity, network defense, and DevOps pipelines. Passionate
+          about building secure and automated infrastructure.
+        </p>
+        <div class="tags">
+          <span class="tag tag-green">Cybersecurity</span>
+          <span class="tag tag-green">Linux</span>
+          <span class="tag tag-green">CI/CD</span>
+          <span class="tag tag-green">Networking</span>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="card-contact">
+          <a class="contact-link"
+             href="https://wa.me/923331122334"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="WhatsApp Mubashir Hassan">
+            <span class="contact-icon icon-whatsapp">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.55 4.142 1.595 5.945L0 24l6.335-1.652A11.971 11.971 0 0012.04 23.99h.006c6.578 0 11.935-5.335 11.938-11.893 0-3.18-1.24-6.165-3.464-8.648zM12.045 21.98a9.916 9.916 0 01-5.032-1.37l-.361-.214-3.741.976.999-3.648-.235-.374a9.864 9.864 0 01-1.521-5.263c.002-5.455 4.455-9.893 9.916-9.893 2.65 0 5.138 1.028 7.011 2.895a9.827 9.827 0 012.902 6.993c-.003 5.457-4.456 9.898-9.938 9.898zm5.44-7.404c-.298-.149-1.765-.869-2.038-.968-.273-.099-.472-.149-.671.149-.199.297-.769.968-.943 1.167-.174.198-.347.223-.645.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.133-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.671-1.612-.919-2.207-.242-.579-.487-.5-.671-.509-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.793.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.571-.347z" fill="#25d366"/>
+              </svg>
+            </span>
+            +92 333 112 2334
+          </a>
+          <a class="contact-link"
+             href="mailto:mubashir.hassan@email.com"
+             aria-label="Email Mubashir Hassan">
+            <span class="contact-icon icon-email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="M2 7l10 7 10-7"/>
+              </svg>
+            </span>
+            mubashir.hassan@email.com
+          </a>
+        </div>
+
+        <!-- Portfolio Link -->
+        <a class="card-cta" href="#" aria-label="View Mubashir Hassan's portfolio">
+          <span class="cta-label cta-3">View Portfolio</span>
+          <span class="cta-arrow arrow-3">
+            <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 12L12 2M12 2H5M12 2V9" stroke="#34d399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+    </div><!-- /cards-grid -->
+
+    <footer class="footer">
+      © 2026 · BSIT Portfolio Hub · Built with Flask + Docker + AWS
+    </footer>
+
+  </div><!-- /container -->
 
 </body>
 </html>
